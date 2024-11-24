@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pollution Level Checker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for graphs -->
+</head>
+<body>
+  <div class="main-container">
+    <header>
+      <h1>🌍 Pollution Level Checker</h1>
+      <p>Get real-time air quality information for any location!</p>
+    </header>
+    <div class="input-section">
+      <input type="text" id="locationInput" placeholder="Enter a city name...">
+      <button id="checkPollution"><i class="fas fa-search"></i> Check Pollution</button>
+    </div>
+    <div id="results" class="hidden">
+      <h2>Results for <span id="cityName"></span>:</h2>
+      <div class="stats">
+        <div class="stat">
+          <h3>Air Quality Index (AQI)</h3>
+          <p id="aqi"></p>
+        </div>
+        <div class="stat">
+          <h3>Health Advice</h3>
+          <p id="advice"></p>
+        </div>
+      </div>
+      <canvas id="pollutionChart"></canvas>
+    </div>
+    <footer>
+      <p>Made with 💙 for environmental awareness</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
