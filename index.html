@@ -7,7 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #0a1f44;
+            color: white;
             text-align: center;
             margin: 0;
             padding: 0;
@@ -19,24 +20,26 @@
             height: 100vh;
         }
         .plan {
-            background: white;
+            background: #1a2b6d;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px rgba(255,215,0,0.6);
             padding: 20px;
             margin: 15px;
             width: 250px;
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid gold;
         }
         .plan:hover {
             transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(255,215,0,0.9);
         }
         .plan h2 {
-            color: #333;
+            color: gold;
         }
         .price {
             font-size: 24px;
             font-weight: bold;
-            color: #008CBA;
+            color: #ffd700;
         }
     </style>
 </head>
